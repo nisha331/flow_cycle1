@@ -1,0 +1,30 @@
+body{
+    background: url("backgrounddropdown.png");
+}
+.heading{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:60px;
+    margin-top:150px;
+}
+.information{
+    border-color:black;
+    border-style:solid;
+    display:flex;
+    margin:80px;
+    height:1000px;
+}
+
+.info{
+    margin:20px;
+    margin-top:20px;
+    text-align:justify;
+    font-size:20px;
+}
+.exclaim{
+    
+    font-size:20px;
+}
+.navbar{
+    margin:0px;
+  }

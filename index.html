@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLOW-CYCLE</title>
+    <link rel="icon" href="icon.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,700">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="body-back">
+
+   
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+        
+       
+            <a href="#"
+            class="navbar-brand mb-0 h1"> 
+            <img class="d-inline-block align-top" 
+            src="icon.png"
+            width="30" height="30"/>
+            FLOW CYCLE
+            </a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"
+                        id="navbarDropDown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            ARTICLES AND INFORMATION
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropDown">
+                            <li><a href="womenhealth.html"
+                            class="dropdown-item">WOMEN HEALTH</a></li>
+                            <li><a href="menstrualcycle.html"
+                                class="dropdown-item">MENSTRUAL CYCLE</a></li>
+                             <li><a href="pregnancy.html"
+                                class="dropdown-item">PREGNANCY</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+               
+            </div>
+       
+    </nav>
+   
+    
+   
+
+<div class="container">
+    <div class="square">
+      <div id="content">
+        <h2>Did you Just start your periods.</h2>
+        <p>
+            <input type="button" 
+                value="Log your periods" 
+                id="bt" 
+                onclick="toggle(this)">
+        </p>
+        <div style="border:solid 1px #ddd; 
+        padding:10px; 
+        display:none;" 
+        id="cont"><input type=date id = "Day">
+
+        <!-- Choose a date and enter in input field -->
+        <button type="submit" onclick = "Calculator()"> date </button> <br><br>
+        <h3 style="color:32A80F" id="result" align="center"></h3> </div>
+
+
+      </div>
+    </div>
+  </div>
+
+<div id="mens"><b>is the date when you will have your next periods.</b></div>
+ 
+<div class="experi">
+    <h3></h3>
+    <ul class="wlist">
+        <li></li>
+    </ul>
+</div>
+<footer class="text-dark pt-5 pt-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning"></h5>
+                <p>
+                    
+                </p>
+            </div>
+            <div class="col-md-2 col-lg col-xl-2 mx-auto mt-2">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning"></h5>
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function toggle(ele) {
+            var cont = document.getElementById('cont');
+            cont.style.display = cont.style.display == 'none' ? 'block' : 'none';
+        }
+        function Calculator() {
+console.log("In");
+    var userinput = document.getElementById("Day").value;
+    var dt = new Date(userinput);
+    if(userinput==null || userinput=='') {
+      document.getElementById("result").innerHTML = "**Choose a date please!";  
+      return false; 
+    } else {
+var res = new Date();
+
+res.setDate(dt.getDate()+28);
+var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+var res_date=res.getDate();
+var res_mon=res.getMonth();
+
+
+     document.getElementById("result").innerHTML =  
+             res_date + " " +monthNames[res_mon-1];
+    }
+}
+    </script>
+</body>
+</html>
+
+
