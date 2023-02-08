@@ -6,5 +6,15 @@ Also we have been focussing on the women health and hygiene so that they donot f
 
 <p> We are up for any suggetions and any additional features which is not there. </p>
 
+## Pre-requisites :rotating_light:
 
+
+- **Javascript** 
+    
+
+- **Html** 
+    
+    
+- **CSS** 
+    
 
