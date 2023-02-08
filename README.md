@@ -19,7 +19,7 @@ Also we have been focussing on the women health and hygiene so that they donot f
     
 ## Contributing :handshake:
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/hound77/jwoc-archive/pulls)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/nisha331/flow_cycle1)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/nisha331/flow_cycle1/pulls)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/nisha331/flow_cycle1)
 
 
 **We're accepting PRs for our open and unassigned [issues](https://github.com/nisha331/flow_cycle1/issues)**.
