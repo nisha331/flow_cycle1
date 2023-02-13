@@ -6,7 +6,7 @@ Also we have been focussing on the women health and hygiene so that they donot f
 
 <p> We are up for any suggetions and any additional features which is not there. </p>
 
-<p> Disclaimer: Flow cycle is an attempt to make a web version of popular app flow, (With fair intent of only practicing ). </p>
+<p> Disclaimer: Flow cycle is an attempt to make a web version of popular app flo, (With fair intent of only practicing ). </p>
 
 ## Pre-requisites :rotating_light:
 
