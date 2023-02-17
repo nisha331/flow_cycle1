@@ -1,0 +1,40 @@
+body{
+    background: url("backgrounddropdown.png");
+
+}
+.heading{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:60px;
+    margin-top:150px;
+}
+.information{
+    border-color:black;
+    border-style:solid;
+    display:flex;
+    margin:90px;
+    height:900px;
+}
+
+.info{
+    margin:20px;
+    font-size:20px;
+}
+
+.head{
+    list-style: none;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.end{
+    text-align:center;
+}
