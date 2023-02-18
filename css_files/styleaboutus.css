@@ -2,6 +2,45 @@ body{
     background: url("backgroundabout.jpg");
 
 }
+
+/* header */
+.image-border{
+  border-radius: 100%;
+}
+.navbar {
+  padding: 1rem 0;
+
+}
+
+.head{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#ff1a8c;
+  text-align: left;
+  position: static;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #000;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff4532;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.bi {
+  font-size: 1.5rem;
+}
+
+
+/* header */
+
 .heading{
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
@@ -24,3 +63,34 @@ body{
     font-style:italic;
     font-size:30px;
 }
+
+
+/* footer */
+.bg-pink {
+background-color: #FFC0CB;
+}
+
+.text-black {
+color: #000000;
+}
+
+.footer-links li {
+display: inline-block;
+margin-right: 20px;
+}
+
+.social-links li {
+display: inline-block;
+margin-right: 20px;
+}
+.row{
+padding-top: 60px;
+}
+.social-links i {
+font-size: 20px;
+}
+
+.nav-link{
+color: #000;
+}
+/* footer */
