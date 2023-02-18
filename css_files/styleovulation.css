@@ -11,9 +11,15 @@ body{
 .information{
     border-color:black;
     border-style:solid;
-    display:flex;
+    display:block;
     margin:90px;
-    height:900px;
+    overflow: auto;
+}
+
+.video{
+    width: 500px;
+    height: 281px;
+    margin: 20px 20px;
 }
 
 .info{
