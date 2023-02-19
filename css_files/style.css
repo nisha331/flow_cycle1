@@ -24,7 +24,6 @@
 
   .experi{
     background-color: rgb(199, 93, 109);
-    
     margin-top:25px;
     font-family: 'Times New Roman', Times, serif;
     
@@ -32,11 +31,11 @@
 
  .logoheading{
     font-family: 'Raleway', sans-serif;
-    padding-top: 0.5rem;
+    padding-top: 0.6rem;
     padding-left: 0.8rem;
     margin-bottom: 0;
     float: right;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     color: #EB1365;
   }
@@ -84,7 +83,7 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     display: block;
-    height: 90px;
+    height: 70px;
     width: 100%;
     background-color: white;
   }
@@ -92,6 +91,6 @@
   .footernav>h2{
     color: #EB1365;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 7px;
     font-size: 700;
   }
