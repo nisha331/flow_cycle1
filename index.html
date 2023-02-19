@@ -4,116 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FLOW-CYCLE</title>
-    <link rel="icon" href="icon.png" type="image/icon type">
+    <link rel="icon" href="images/icon.png" type="image/icon type">
     <link rel="stylesheet" href="css_files/style.css">
-
-    <!-- bootstrap icon link Used in Header and footer-->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-    <!-- bootstrap icon link Used in Header and footer-->
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,700">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body class="body-back">
-
-<!-- Header -->
-  <header class="navbar navbar-expand-xxl navbar-light bg-white">
-  <div class="container-fluid">
-    <a href="index.html"class="navbar-brand"><img class="d-inline-block align-top image-border" src="images/icon.png" width="45" height="45"/></a><span><h3 class="head">FLOW CYCLE</h3> </span>
-    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#footer"><img class="d-inline-block align-top image-border" src="images/Calendar1.png" width="45" height="45"/></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html"><img class="d-inline-block align-top image-border" src="images/Girl.png" width="45" height="45"/></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
 
 
-<!-- header -->
+  <body class="body-back">
+        
+    <section class="navigation-bar">
+      <nav class="navbar navbar-expand-sm me-0 p-0" style="background-color: white;">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand p-0"href="#"><img src="images/icon.png" height="60" alt="flow cycle logo"><p class="logoheading">FLOW CYCLE</p></a>
+        </div>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="container">
-    <div class="square">
-      <div id="content">
-        <h2>Did you Just start your periods.</h2>
-        <p>
-            <input type="button"
-                value="Log your periods"
-                id="bt"
-                onclick="toggle(this)">
-        </p>
-        <div style="border:solid 1px #ddd;
-        padding:10px;
-        display:none;"
-        id="cont"><input type=date id = "Day">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><img src="images/calendar.png" height="60" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-4" href="#"><img src="images/woman.png" height="60" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
-        <!-- Choose a date and enter in input field -->
-        <button type="submit" onclick = "Calculator()"> date </button> <br><br>
-        <h3 style="color:32A80F" id="result" align="center"></h3> </div>
+    <section>
+      <figure class="m-0">
+        <img class="backgroundimage" style="border-top-left-radius: 80px; border-bottom-left-radius: 80px;" src="images/bg.png" alt="">
+      </figure>
+    </section>
+        
+      <main>
+          <section>
+            <div class="infobox">
+              <h2>Last Periods was on</h2>
 
+              <p>
+                  <input type="button" value="Log The Date" id="btn" onclick="toggle(this)">
+              </p>
 
-      </div>
-    </div>
-  </div>
+              <div id="cont"><input type=date id = "Day">
 
-<div id="mens"><b>is the date when you will have your next periods.</b></div>
-
-<div class="experi">
-    <h3></h3>
-    <ul class="wlist">
-        <li></li>
-    </ul>
-</div>
-
-
-<!-- footer -->
-
-<footer class="bg-pink text-black" id="footer">
-  <div class="container-fluid ">
-    <div class="row align-items-sm-center" >
-      <div class="col-md-4">
-        <a href="index.html" class="text-decoration-none" style="color:#ff0080; font-family: bold; font-size: 1.5rem; font-weight: bold;">
-          <img class="d-inline-block align-top image-border" src="images/icon.png" alt="Company Logo" width="40" height="40"/> FLOW CYCLE</a>
-      </div>
-      <div class="col-md-4">
-        <ul class="nav justify-content-center text-decoration-none" >
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" style="color: #000;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: #000;">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer" style="color: #000;">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul class="social-icons list-inline d-flex align-items-center justify-content-center">
-          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-black"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-black"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-black"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-black"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- footer -->
+                <!-- Choose a date and enter in input field -->
+              <button id="btn" type="submit" onclick = "Calculator()"> Confirm </button> 
+              <br><br>
+              <h3 id="result"></h3>
+              </div>
+            </div>
+          </section>
+        </main>
+        
+          <section>
+            <footer>
+              <div class="footernav">
+                <h2>EXPLORE MORE <img src="images/arrowdown.png" height="70px" alt=""></h2>
+              </div>
+            </footer>
+          </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="js_files/index.js"></script>
