@@ -76,6 +76,19 @@
     font-weight: 800;
     font-size: 50px;
   }
+  
+  #btn1 {
+    background-color: white;
+    border: none;
+    color: #E82771;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
 
   .footernav{
     position: absolute;
@@ -93,4 +106,8 @@
     text-align: center;
     padding-top: 7px;
     font-size: 700;
+  }
+
+  #cont{
+    display: none;
   }
