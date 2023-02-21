@@ -21,7 +21,11 @@ Also we have been focussing on the women health and hygiene so that they donot f
     
 ## Contributing :handshake:
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/nisha331/flow_cycle1/pulls)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/nisha331/flow_cycle1)  ![GitHub forks](https://img.shields.io/github/forks/nisha331/flow_cycle1)
+<div align="center">
+ <p>
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/nisha331/flow_cycle1/pulls)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/nisha331/flow_cycle1)  
+
+![GitHub forks](https://img.shields.io/github/forks/nisha331/flow_cycle1)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nisha331/flow_cycle1)
 ![GitHub contributors](https://img.shields.io/github/contributors/nisha331/flow_cycle1)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nisha331/flow_cycle1)
@@ -29,7 +33,8 @@ Also we have been focussing on the women health and hygiene so that they donot f
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/nisha331/flow_cycle1)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/nisha331/flow_cycle1)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/nisha331/flow_cycle1)
-
+    </p>
+    </div>
 
 **We're accepting PRs for our open and unassigned [issues](https://github.com/nisha331/flow_cycle1/issues)**.
 
