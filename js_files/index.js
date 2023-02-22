@@ -5,13 +5,10 @@ document.addEventListener("keyup", (e) => {
   }
 });
 const calender=document.getElementById("cont");
-let calender1=window.getComputedStyle(calender).getPropertyValue("display");
+var calender1=window.getComputedStyle(calender).getPropertyValue("display");
 const log=document.getElementById("btn1");
 
-console.log(calender1);
-console.log(log);
 log.addEventListener("click",(e)=>{
-  console.log(calender1);
   if(calender1!=="none"){
     calender.style.display="none";
     calender1="none"
