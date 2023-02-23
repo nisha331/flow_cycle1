@@ -5,7 +5,7 @@ document.addEventListener("keyup", (e) => {
   }
 });
 const calender=document.getElementById("cont");
-var calender1=window.getComputedStyle(calender).getPropertyValue("display");
+let calender1=window.getComputedStyle(calender).getPropertyValue("display");
 const log=document.getElementById("btn1");
 
 log.addEventListener("click",(e)=>{
@@ -20,15 +20,15 @@ log.addEventListener("click",(e)=>{
 });
 function Calculator() {
   console.log("In");
-  var userinput = document.getElementById("Day").value;
-  var y1 = parseInt(userinput.slice(0, 4));
-  var m1 = parseInt(userinput.slice(5, 7));
-  var d1 = parseInt(userinput.slice(8, 10));
-  var y2 = "";
-  var m2 = "";
-  var d2 = "";
-  var sum = d1 + 28;
-  var monthNames = [
+  let userinput = document.getElementById("Day").value;
+  let y1 = parseInt(userinput.slice(0, 4));
+  let m1 = parseInt(userinput.slice(5, 7));
+  let d1 = parseInt(userinput.slice(8, 10));
+  let y2 = "";
+  let m2 = "";
+  let d2 = "";
+  let sum = d1 + 28;
+  let monthNames = [
     "January",
     "February",
     "March",
