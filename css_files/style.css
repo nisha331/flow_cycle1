@@ -86,6 +86,19 @@
 
 
   }
+  
+  #btn1 {
+    background-color: white;
+    border: none;
+    color: #E82771;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
 
   .footernav{
     position: absolute;
@@ -112,4 +125,6 @@
     border: none;
     padding: 15px;
     font-weight: 600;
+  #cont{
+    display: none;
   }
