@@ -4,8 +4,12 @@ document.addEventListener("keyup", (e) => {
     Calculator();
   }
 });
+
+let butt=document.getElementById("log-dates-btn")
+
 function toggle(ele) {
   var cont = document.getElementById("cont");
+
   cont.style.display = cont.style.display == "none" ? "block" : "none";
 }
 function Calculator() {
@@ -72,8 +76,22 @@ function Calculator() {
         d2 = sum;
       }
     }
+
+    let diff=getDaysSinceDate(d2,m2,y2)
+    let message
+    if(diff<0){
+      message="Period in "+parseInt((-1)*diff+1)+" days"
+    }
+    else{
+      message="your period should have been " + parseInt(diff-1) +" days ago"
+    }
+    document.getElementById("infobox").innerHTML=""
     document.getElementById("result").innerHTML =
-      d2 + " " + monthNames[m2 - 1] + " " + y2;
+    `${message}
+    <button id="edit-btn" onlclick="load()">Edit Period Dates</button>
+  `  
+  document.getElementById("edit-btn").addEventListener("click",load)
+
   } else {
     // console.log("leap");
     if (m1 == 02) {
@@ -113,7 +131,30 @@ function Calculator() {
         d2 = sum;
       }
     }
+    let diff=getDaysSinceDate(d2,m2,y2)
+    let message
+    if(diff<0){
+      message="Period in "+parseInt((-1)*diff+1)+" days"
+    }
+    else{
+      message="your period should have been " + parseInt(diff-1)+" days ago"
+    }
     document.getElementById("result").innerHTML =
-      d2 + " " + monthNames[m2 - 1] + " " + y2;
+      message
   }
+}
+
+
+function getDaysSinceDate(d2, m2, y2) {
+  const currentDate = new Date();
+  const date2 = new Date(`${m2}/${d2}/${y2}`);
+  const diffTime = (currentDate - date2);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+  return diffDays;
+}
+
+
+function load(){
+  window.location.href="index.html"
+  
 }
