@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MENSTRUAL-CYCLE</title>
     <!-- bootstrap icon link Used in Header and footer-->
-
+    <link rel="stylesheet" href="css_files/scrolltoTop.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
@@ -107,5 +107,27 @@
     </footer>
 
     <!-- footer -->
+    <div class="scrollToTopContainer">
+      <button id="scrollToButton" class="HideElement scrollToTopButton" title="Click to scroll top">
+        <img src="images/Chevron.svg" alt="Scroll-To-Top" />
+      </button>
+    </div>
   </body>
+  <script>
+    const scrollToTopHandler = () => {
+  let btn = document.getElementById("scrollToButton");
+  if (window.scrollY > 500) {
+    btn.className = "scrollToTopButton";
+  } else {
+    btn.className = "HideElement scrollToTopButton";
+  }
+}
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+})
+  </script>
 </html>
