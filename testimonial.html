@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="../css_files/swiper-bundle.min.css">
 
-    <link rel="stylesheet" href="../css_files/testimonial.css">
+    <link rel="stylesheet" href="css_files/scrolltoTop.css">
+    <link rel="stylesheet" href="css_files/testimonial.css">
 
 </head>
 
@@ -41,7 +42,7 @@
                         <span class="overlay"> </span>
     
                         <div class="card-image">
-                            <img src="../images/face2.jpeg" alt=" " class="card-img">
+                            <img src="images/face2.jpeg" alt=" " class="card-img">
                         </div>
                     </div>
                     <div class="card-content">
@@ -187,10 +188,30 @@
         <div class="swiper-button-prev swiper-navBtn"></div>
         <div class="swiper-pagination"></div>
     </div>
-    
+    <div class="scrollToTopContainer">
+        <button id="scrollToButton" class="HideElement scrollToTopButton" title="Click to scroll top">
+          <img src="images/Chevron.svg" alt="Scroll-To-Top" />
+        </button>
 </body>
 
 <script src="../js_files/swiper-bundle.min.js"></script>
 <script src="../js_files/testimonial.js"></script>
+<script>
+    const scrollToTopHandler = () => {
+  let btn = document.getElementById("scrollToButton");
+  if (window.scrollY > 500) {
+    btn.className = "scrollToTopButton";
+  } else {
+    btn.className = "HideElement scrollToTopButton";
+  }
+}
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+})
+  </script>
 
 </html>
