@@ -45,12 +45,12 @@
     height: 810px;
   }
 
-  .infobox{
+  #infobox{
     margin-top: 300px;
     text-align: center;
   }
 
-  .infobox>h2{
+  #infobox>h2{
     font-family: 'PT Serif Caption', serif;
     color: #E82771;
     font-weight: 800;
@@ -75,6 +75,16 @@
     color: #E82771;
     font-weight: 800;
     font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: 30px;
+    top: -100px;
+
+
   }
   
   #btn1 {
@@ -108,6 +118,13 @@
     font-size: 700;
   }
 
+  #edit-btn{
+    border-radius: 50px;
+    font-size: 20px;
+    color: #E82771;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
   #cont{
     display: none;
   }
