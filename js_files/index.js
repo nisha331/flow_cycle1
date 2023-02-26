@@ -4,21 +4,40 @@ document.addEventListener("keyup", (e) => {
     Calculator();
   }
 });
+
+let butt=document.getElementById("log-dates-btn")
+
 function toggle(ele) {
   var cont = document.getElementById("cont");
+
   cont.style.display = cont.style.display == "none" ? "block" : "none";
 }
+
+const calender=document.getElementById("cont");
+let calender1=window.getComputedStyle(calender).getPropertyValue("display");
+const log=document.getElementById("btn1");
+
+log.addEventListener("click",(e)=>{
+  if(calender1!=="none"){
+    calender.style.display="none";
+    calender1="none"
+  }
+  else{
+    calender.style.display="block";
+    calender1="block";
+  }
+});
 function Calculator() {
   console.log("In");
-  var userinput = document.getElementById("Day").value;
-  var y1 = parseInt(userinput.slice(0, 4));
-  var m1 = parseInt(userinput.slice(5, 7));
-  var d1 = parseInt(userinput.slice(8, 10));
-  var y2 = "";
-  var m2 = "";
-  var d2 = "";
-  var sum = d1 + 28;
-  var monthNames = [
+  let userinput = document.getElementById("Day").value;
+  let y1 = parseInt(userinput.slice(0, 4));
+  let m1 = parseInt(userinput.slice(5, 7));
+  let d1 = parseInt(userinput.slice(8, 10));
+  let y2 = "";
+  let m2 = "";
+  let d2 = "";
+  let sum = d1 + 28;
+  let monthNames = [
     "January",
     "February",
     "March",
@@ -72,8 +91,22 @@ function Calculator() {
         d2 = sum;
       }
     }
+
+    let diff=getDaysSinceDate(d2,m2,y2)
+    let message
+    if(diff<0){
+      message="Period in "+parseInt((-1)*diff+1)+" days"
+    }
+    else{
+      message="your period should have been " + parseInt(diff-1) +" days ago"
+    }
+    document.getElementById("infobox").innerHTML=""
     document.getElementById("result").innerHTML =
-      d2 + " " + monthNames[m2 - 1] + " " + y2;
+    `${message}
+    <button id="edit-btn" onlclick="load()">Edit Period Dates</button>
+  `  
+  document.getElementById("edit-btn").addEventListener("click",load)
+
   } else {
     // console.log("leap");
     if (m1 == 02) {
@@ -113,7 +146,30 @@ function Calculator() {
         d2 = sum;
       }
     }
+    let diff=getDaysSinceDate(d2,m2,y2)
+    let message
+    if(diff<0){
+      message="Period in "+parseInt((-1)*diff+1)+" days"
+    }
+    else{
+      message="your period should have been " + parseInt(diff-1)+" days ago"
+    }
     document.getElementById("result").innerHTML =
-      d2 + " " + monthNames[m2 - 1] + " " + y2;
+      message
   }
+}
+
+
+function getDaysSinceDate(d2, m2, y2) {
+  const currentDate = new Date();
+  const date2 = new Date(`${m2}/${d2}/${y2}`);
+  const diffTime = (currentDate - date2);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+  return diffDays;
+}
+
+
+function load(){
+  window.location.href="index.html"
+  
 }
