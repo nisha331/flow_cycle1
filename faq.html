@@ -6,6 +6,7 @@
   <title>FAQ - Frequently Asked Questions</title>
   <link rel="icon" href="icon.png" type="image/icon type">
   <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="css_files/scrolltoTop.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,700">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -411,9 +412,30 @@
     </div>
 
   </div>
-
+  <div class="scrollToTopContainer">
+    <button id="scrollToButton" class="HideElement scrollToTopButton" title="Click to scroll top">
+      <img src="images/Chevron.svg" alt="Scroll-To-Top" />
+    </button>
+  </div>
   <script src="./faq.js">
   </script>
 </body>
+<script>
+  const scrollToTopHandler = () => {
+let btn = document.getElementById("scrollToButton");
+if (window.scrollY > 500) {
+  btn.className = "scrollToTopButton";
+} else {
+  btn.className = "HideElement scrollToTopButton";
+}
+}
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
+})
+</script>
 
 </html>
