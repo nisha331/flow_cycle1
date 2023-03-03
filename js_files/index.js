@@ -6,13 +6,6 @@ document.addEventListener("keyup", (e) => {
 });
 
 let butt=document.getElementById("log-dates-btn")
-
-function toggle(ele) {
-  var cont = document.getElementById("cont");
-
-  cont.style.display = cont.style.display == "none" ? "block" : "none";
-}
-
 const calender=document.getElementById("cont");
 let calender1=window.getComputedStyle(calender).getPropertyValue("display");
 const log=document.getElementById("btn1");
