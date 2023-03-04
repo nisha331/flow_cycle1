@@ -154,3 +154,7 @@
   #cont{
     display: none;
   }
+   #btn1:hover{
+    background-color: #E82771;;
+    color:white;
+  }
