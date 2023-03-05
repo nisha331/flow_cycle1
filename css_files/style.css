@@ -1,7 +1,7 @@
 .body-back {
   background-color: #EFB7C7;
   font-family: 'Raleway', sans-serif;
-  overflow: hidden;
+  
 }
   .loader {
 
@@ -67,7 +67,7 @@
 
   .backgroundimage{
     float: right;
-    height: 810px;
+    height: 88vh;
   }
 
   #infobox{
@@ -134,8 +134,13 @@
     height: 70px;
     width: 100%;
     background-color: white;
+    text-align: center;
+    cursor:pointer;
   }
-
+  .footernav a{
+    text-decoration: none;
+    color: #E82771;
+  }
   .footernav>h2{
     color: #EB1365;
     text-align: center;
@@ -158,3 +163,45 @@
     background-color: #E82771;;
     color:white;
   }
+
+
+  /*---------explore more section----------*/
+
+ .explore{
+  background-color: white;
+ }
+ .explore h2{
+  display:none;
+  color:#EB1365;
+  text-align:center;
+ }
+ .explore .card{
+  background:#ffd7e9 ;
+  border:none;
+  text-align:center; 
+  
+ }
+ .explore .card-title{
+  color: #EB1365;
+  font-weight:bold;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  
+ }
+ .explore .card p{
+  font-weight: 500;
+  color:#EB1365;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+ }
+ .explore .btn{
+  background:white;
+  color:#EB1365;
+ }
+ .explore .btn:hover{
+  background:white !important;
+  color:#EB1365!important;
+  cursor:pointer;
+ }
+
+/*--------------------------*/
