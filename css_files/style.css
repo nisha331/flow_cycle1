@@ -303,7 +303,7 @@
 
 /*--------------------------*/
 
-.footer{
+.footer2{
   height: auto;
   background-color: #EB1365;
   bottom: 0;
@@ -319,7 +319,7 @@
   left:0;
 
 }
-.footer .copy{
+.footer2 .copy{
   padding:.5rem 2rem;
 }
 .icons{
@@ -328,12 +328,12 @@
   justify-content:center;
 }
 
-.footer a{
+.footer2 a{
   text-decoration: none;
   color:#ffd7e9;
 }
 
-.footer a:hover {
+.footer2 a:hover {
   color: rgba(255, 154, 158, 1);
   transition: all 0.3s linear;
 }
