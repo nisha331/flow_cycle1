@@ -18,7 +18,7 @@ body{
     border-style:solid;
     display:flex;
    
-    height:1100px;
+    height:1250px;
     font-size: 20px;
     width: 1200px;
 }
@@ -26,8 +26,8 @@ body{
   border-color:white;
   border-style:solid;
   display:flex;
- 
-  height:400px;
+ overflow: hidden;
+  height:500px;
   font-size: 20px;
   width: 1200px;
 }

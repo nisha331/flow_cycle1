@@ -20,9 +20,7 @@
   
 </head>
 <body>
-    <button class="gotop">
-        <img src="images/upButton.png" alt="arrow up">
-    </button>
+
     <section class="navigation-bar">
       <nav class="navbar navbar-expand-sm me-0 p-0" style="background-color: white;">
         
@@ -83,62 +81,63 @@
    
     </div>
 
-    <div class="footer" id="about">
-        <footer>
-          <div class="waves" >
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-          </div>
-          <ul class="social-icon">
-            <li>
-              <a href="https://jwoc.tech/" target="_blank"
-                ><ion-icon name="logo-web-component"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/TeamJWOC" target="_blank"
-                ><ion-icon name="logo-twitter"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/jwoc/" target="_blank"
-                ><ion-icon name="logo-linkedin"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/jwoc-jgec" target="_blank"
-                ><ion-icon name="logo-github"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:contact.jwoc@gmail.com" target="_blank"
-                ><ion-icon name="mail-outline"></ion-icon
-              ></a>
-            </li>
-          </ul>
-       
-          <p>Copyright © JWOC 2023 All Rights Reserved</p>
-          <p>
-            Created by
-            <a href="https://github.com/nisha331" target="_blank">Nisha Yadav</a> and
-            <a
-              href="https://github.com/nisha331/flow_cycle1/graphs/contributors" target="_blank"
-              >Team</a
-            >
-          </p>
-        </footer>
+    <footer class="footer2" id="footer2">
+      <div class="copy">
+        Copyright © 2023 by <a href="#">Nisha Yadav. </a>All Rights Reserved
       </div>
+      <div class="icons">
+        <a class="github" href="https://github.com/nisha331" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a class="linkedin" href="https://www.linkedin.com/in/nisha-yadav-2950351ab/" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <button class="back-to-top hidden">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="back-to-top-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 11l5-5m0 0l5 5m-5-5v12"
+          />
+        </svg></button>
+
   
-      <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="js_files/go_to_top.js"></script>
+      </div>
+    </footer>
+      <script>
+        const showOnPx = 100;
+        const backToTopButton = document.querySelector(".back-to-top")
+      
+       const scrollContainer = () => {
+         return document.documentElement || document.body;
+        };
+      
+      document.addEventListener("scroll", () => {
+      if (scrollContainer().scrollTop > showOnPx) {
+       backToTopButton.classList.remove("hidden")
+      } else {
+       backToTopButton.classList.add("hidden")
+      }
+      })
+      const goToTop = () => {
+      document.body.scrollIntoView({
+       behavior: "smooth",
+      });
+      };
+      backToTopButton.addEventListener("click", goToTop)
+      var loader = document.querySelector(".loader");
+        window.addEventListener("load", vanish);
+        function vanish() {
+        loader.classList.add("disppear");
+      
+      }
+      </script>
 </body>
 </html>
