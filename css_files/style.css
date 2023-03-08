@@ -1,9 +1,9 @@
 .body-back {
   background-color: #EFB7C7;
   font-family: 'Raleway', sans-serif;
-  
+
 }
-  
+
 .loader {
   position: fixed;
   z-index: 999999999 !important;
@@ -11,16 +11,17 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+
+
+  
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
-
 .disappear {
   animation: vanish 4s forwards;
 }
-
 @keyframes vanish {
   100% {
     opacity: 0;
@@ -32,11 +33,12 @@
   .square {
     background-color: bisque;
     margin-top:150px;
+
+  
     height:300px;
     width:300px;
     border-style: double;
   }
-
   
   .square:after {
     content: "";
@@ -46,14 +48,12 @@
     
   }
   
-
   .experi{
     background-color: rgb(199, 93, 109);
     margin-top:25px;
     font-family: 'Times New Roman', Times, serif;
     
   }
-
  .logoheading{
     font-family: 'Raleway', sans-serif;
     padding-top: 0.6rem;
@@ -73,8 +73,10 @@
   #infobox{
     margin-top: 300px;
     text-align: center;
-  }
 
+    
+
+  }
   #infobox>h2{
     font-family: 'PT Serif Caption', serif;
     color: #E82771;
@@ -88,7 +90,7 @@
     font-weight: 700;
     font-size: 40px;
     display:inline-block;
-    
+
   }
   .image{
     height:85vh;
@@ -97,6 +99,9 @@
   #btn {
       background-color: white;
       border: none;
+
+
+  
       color: #E82771;
       padding: 10px 20px;
       text-align: center;
@@ -106,7 +111,6 @@
       cursor: pointer;
       border-radius: 25px;
   }
-
   #result{
     font-family: 'PT Serif Caption', serif;
     color: #E82771;
@@ -123,6 +127,9 @@
 
 
   }
+
+
+  
   
   #btn1 {
     background-color: white;
@@ -229,6 +236,9 @@
   .footernav{
     position: absolute;
     bottom: 0;
+
+
+  
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     display: block;
@@ -254,6 +264,8 @@
 
  .explore{
   background-color: white;
+
+  
  }
  .explore h2{
   display:none;
@@ -291,7 +303,7 @@
 
 /*--------------------------*/
 
-.footer{
+.footer2{
   height: auto;
   background-color: #EB1365;
   bottom: 0;
@@ -305,9 +317,9 @@
   text-transform: uppercase;
   bottom:0;
   left:0;
-  
+
 }
-.footer .copy{
+.footer2 .copy{
   padding:.5rem 2rem;
 }
 .icons{
@@ -316,12 +328,12 @@
   justify-content:center;
 }
 
-.footer a{
+.footer2 a{
   text-decoration: none;
   color:#ffd7e9;
 }
 
-.footer a:hover {
+.footer2 a:hover {
   color: rgba(255, 154, 158, 1);
   transition: all 0.3s linear;
 }
