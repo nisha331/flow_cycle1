@@ -112,7 +112,7 @@
           <section>
             <footer>
               <div class="footernav">
-                <a  onclick="myfunction()"><h2 id="p2" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="demo1 demo2">EXPLORE MORE <img src="images/arrowdown.png" height="75px" alt=""></h2></a>
+                <a  onclick="myfunction()"><h2 id="p2" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="demo1 demo2 demo3">EXPLORE MORE <img src="images/arrowdown.png" height="75px" alt=""></h2></a>
               </div>
             </footer>
           </section>
@@ -231,31 +231,30 @@
 
             </div>
           </section>
-       <section class="news">
-        <form id="newsin">
-        <div>
-           <h1>Subscribe to our Newsletter</h1>
-          </br>
-           <p>Make sure you don't miss any updates regarding our latest articles</p>
-        </div>
+       <section id="news" class="collapse multi-collapse" id="demo3">
+          <form id="newsin">
+            <div>
+              <h1>Subscribe to our Newsletter</h1>
+              </br>
+              <p>Make sure you don't miss any updates regarding our latest articles</p>
+            </div>
 
-     <div id="info" style="background-color:white">
-       <label for="nameuser">Name :</label>
-       <input id="nameuser" type="text" placeholder="Name" name="name" required>
-     </br>
-       <label for="nameuser">Email :</label>
-       <input id="nameuser" type="text" placeholder="Email address" name="mail" required>
-   </br> 
-       <label>
-         <input id="checkedbox" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-       </label>
-     </div>
-
-     <div>
-       <input id="submitnews" type="submit" value="Subscribe">
-     </div>
-   </form>
-  </section>
+            <div id="info" style="background-color:white">
+              <label for="nameuser">Name :</label>
+              <input id="nameuser" type="text" placeholder="Name" name="name" required>
+              </br>
+              <label for="nameuser">Email :</label>
+              <input id="nameuser" type="text" placeholder="Email address" name="mail" required>
+              </br> 
+              <label>
+                <input id="checkedbox" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+              </label>
+            </div>
+            <div>
+              <input id="submitnews" type="submit" value="Subscribe">
+            </div>
+          </form>
+        </section>
 
         <div class="footer" id="about">
           <footer>
@@ -358,16 +357,18 @@ function myfunction(){
   let x=document.getElementById("p2");
   const y=document.getElementById("myDIV");
   const z=document.getElementById("about");
+  const t=document.getElementById("news")
   console.log(x.ariaExpanded);
   if(x.ariaExpanded=="true"){
-    console.log('a');
     y.style.display="block";
+    t.style.display="block";
     z.style.display="block";
   }
   else{
-    console.log('b');
+    t.style.display="none";
     y.style.display="none";
     z.style.display="none";
+    
   }
 }
 </script>
