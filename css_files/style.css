@@ -303,69 +303,6 @@
 
 /*--------------------------*/
 
-.footer2{
-  height: auto;
-  background-color: #EB1365;
-  bottom: 0;
-  display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content: space-between;
-  align-items:center;
-  color:#ffd7e9;
-  text-align:center;
-  text-transform: uppercase;
-  bottom:0;
-  left:0;
-
-}
-.footer2 .copy{
-  padding:.5rem 2rem;
-}
-.icons{
-  padding:.5rem 2rem;
-  text-align:center;
-  justify-content:center;
-}
-
-.footer2 a{
-  text-decoration: none;
-  color:#ffd7e9;
-}
-
-.footer2 a:hover {
-  color: rgba(255, 154, 158, 1);
-  transition: all 0.3s linear;
-}
-
-
-.icons i {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  border-radius: 100%;
-  background-color: #ffd7e9;
-  color: #818a91;
-  display: inline-block;
-  text-align: center;
-  transition: all 0.2s linear;
-}
-
-.github :hover {
-  background-color: #040404;
-  color: #fff;
-}
-
-.linkedin :hover {
-  background-color: #007bb6;
-  color: #fff;
-}
-
-.instagram :hover {
-  background-color: #ea2c59;
-  color: #fff;
-}
 
 /*------------------------*/
   #edit-btn{
@@ -408,34 +345,4 @@
     }
   }
 
-  .back-to-top {
-    position: fixed;
-    right: 2rem;
-    bottom: 1rem;
-}
-.hidden {
-    display: none;
-        opacity: 0%;
-
-  }
-.back-to-top {
-    position: fixed;
-    right: 2rem;
-    bottom: 4rem;
-    border-radius: 100%;
-    background: #EB1365;
-    padding: 0.2rem;
-    border: none;
-    cursor: pointer;
-    opacity: 100%;
-    transition: opacity 0.5s;
-  }
-  .back-to-top-icon {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #ffd7e9;
-  }
-  .back-to-top:hover {
-    background: black;
-  }
+ 
