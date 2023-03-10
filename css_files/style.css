@@ -3,6 +3,9 @@
   font-family: 'Raleway', sans-serif;
 
 }
+.footer{
+  min-height: 0vh;
+}
 
 .loader {
   position: fixed;
@@ -264,7 +267,6 @@
 
  .explore{
   background-color: white;
-
   
  }
  .explore h2{
@@ -338,6 +340,12 @@
     .back-to-top{
       bottom: 2rem;
     }
+  }
+  #about{
+    display: none;
+  }
+  #myDIV{
+    display: none;
   }
   @media(min-width:992px){
     .image{

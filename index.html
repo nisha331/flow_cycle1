@@ -112,7 +112,7 @@
           <section>
             <footer>
               <div class="footernav">
-                <a><h2 data-bs-toggle="collapse" href="#demo" aria-expanded="false" aria-controls="demo">EXPLORE MORE <img src="images/arrowdown.png" height="75px" alt=""></h2></a>
+                <a  onclick="myfunction()"><h2 id="p2" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="demo1 demo2">EXPLORE MORE <img src="images/arrowdown.png" height="75px" alt=""></h2></a>
               </div>
             </footer>
           </section>
@@ -123,7 +123,7 @@
                   <h2>Explore More</h2>
                 </div>
                 
-                <div id="demo" class="collapse">
+                <div id="demo1" class="collapse multi-collapse">
                   <div class="row p-5 g-4">
                     <div class="col-sm-4 mb-3 mb-sm-0">
                       <div class="card h-100">
@@ -224,7 +224,6 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
 
@@ -233,7 +232,7 @@
             </div>
 
         </section>
-        <div class="footer" id="about">
+        <div class="footer collapse multi-collapse" id="about" id="demo2">
           <footer>
             <div class="waves" >
               <div class="wave" id="wave1"></div>
@@ -329,6 +328,22 @@ var loader = document.querySelector(".loader");
   function vanish() {
   loader.classList.add("disppear");
 
+}
+function myfunction(){
+  let x=document.getElementById("p2");
+  const y=document.getElementById("myDIV");
+  const z=document.getElementById("about");
+  console.log(x.ariaExpanded);
+  if(x.ariaExpanded=="true"){
+    console.log('a');
+    y.style.display="block";
+    z.style.display="block";
+  }
+  else{
+    console.log('b');
+    y.style.display="none";
+    z.style.display="none";
+  }
 }
 </script>
  
