@@ -24,7 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 45vh;
   background-color: white;
   /* change color and min height here to observe difference between footer and  last row */
 }
