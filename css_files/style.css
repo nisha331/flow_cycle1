@@ -7,7 +7,6 @@
 ::-webkit-scrollbar{
   width:10px;
 }
-
 ::-webkit-scrollbar-track{
   background:#E82771;
   border-radius:100vw;
@@ -24,9 +23,6 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-
-
-  
   align-items: center;
   justify-content: center;
   padding: 0;
