@@ -10,8 +10,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size:60px;
     margin-top:1px;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
     padding-left: 250px;
+    color:#EB1365;
 }
 .information{
     border-color:white;
@@ -26,7 +27,6 @@ body{
   border-color:white;
   border-style:solid;
   display:flex;
- 
   height:400px;
   font-size: 20px;
   width: 1200px;
@@ -39,5 +39,23 @@ body{
     margin:20px;
 }
 
-/* footer */
+.inf b{
+  color:#E82771;
+}
 
+.tag{
+  text-align: center;
+  color:#E82771;
+  font-size: 20px;
+  padding-left: 250px;
+  padding-bottom: 20px;  
+}
+
+.inf ul{
+  border:solid #EB1365 8px;
+  border-radius: 2rem;
+}
+
+.inf li{
+  color:#E82771;
+}
