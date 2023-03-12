@@ -3,7 +3,7 @@
   font-family: 'Raleway', sans-serif;
 
 }
-
+/*changing the scrollbar*/
 ::-webkit-scrollbar{
   width:10px;
 }
