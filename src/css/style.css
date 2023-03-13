@@ -323,6 +323,52 @@
   display: none;
  }
 /*--------------------------*/
+/* ---------------------------- */
+.hear{
+  color:#EB1365;
+  font-family: 'PT Serif Caption', Times, serif;
+  font-weight:bold;
+  font-size:1.4rem;
+ }
+ .mail{
+  color:#EB1365;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:500;
+  font-size: 1.2rem;
+
+
+ }
+ .mail p{
+  font-size:1.2rem;
+ }
+ .contact .form-label{
+  color:#EB1365;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:1.2rem;
+ }
+ .contact .btn{
+  background:white;
+  color:#EB1365;
+ }
+ .contact .btn:hover{
+  background:white !important;
+  color:#EB1365!important;
+  cursor:pointer;
+ }
+ .contact input[type=email]:focus{
+  outline:none;
+  box-shadow:none;
+  border:1px solid #EB1365;
+ }
+ .contact textarea:focus{
+  outline:none;
+  box-shadow:none;
+  border:1px solid #EB1365;
+ }
+
+
+/*--------------------------*/
 
 
 /*------------------------*/
