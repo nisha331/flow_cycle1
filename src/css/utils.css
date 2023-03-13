@@ -76,3 +76,24 @@
   border: 2px solid var(--main-bg-color);
     border-radius: 5px;
 }
+
+
+
+
+.about-information1{
+  border-color:white;
+  border-style:solid;
+  display:flex;
+  font-size: 20px;
+  width: 1200px;
+}
+.article-mx-5{
+  margin-right:3.5rem;
+  margin-left:3.5rem;
+}
+@media (max-width:1240px){
+  .article-mx-5{
+    margin-right:0;
+    margin-left:0;
+  }
+}
