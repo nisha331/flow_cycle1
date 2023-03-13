@@ -16,6 +16,19 @@ body{
     height:auto;
 }
 
+::-webkit-scrollbar{
+    width:10px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background:#E82771;
+    border-radius:100vw;
+  }
+  ::-webkit-scrollbar-thumb{
+    background:#fcadcb;
+    border-radius:100vw;
+  }
+
 .info{
     margin:20px;
     font-size:20px;
@@ -27,6 +40,18 @@ body{
     border-bottom: 2px solid black;
     cursor: pointer;
 }
+
+.logoheading{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 0.6rem;
+    padding-left: 0.8rem;
+    margin-bottom: 0;
+    float: right;
+    font-size: 35px;
+    font-weight: 700;
+    color: #EB1365;
+  }
+
 
 .question{
     display: flex;
