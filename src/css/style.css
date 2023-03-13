@@ -7,6 +7,19 @@
   min-height: 0vh;
 }
 
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#E82771;
+  border-radius:100vw;
+}
+::-webkit-scrollbar-thumb{
+  background:#fcadcb;
+  border-radius:100vw;
+}
+
 .loader {
   position: fixed;
   z-index: 999999999 !important;
