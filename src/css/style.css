@@ -158,6 +158,7 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 25px;
+    transition: background-color 0.15s , color 0.15s;
 }
 
 #btn1:hover{
@@ -309,10 +310,11 @@
  .explore .btn{
   background:white;
   color:#EB1365;
+  transition: background-color 0.15s , color 0.15s;
  }
- .explore .btn:hover{
-  background:white !important;
-  color:#EB1365!important;
+ .explore .explore-btn:hover{
+  background:#E82771;
+  color:white;
   cursor:pointer;
  }
  #about{
@@ -320,6 +322,14 @@
  }
 
 /*--------------------------*/
+/* subscribe button */
+
+#submitnews:hover{
+  background-color: white;
+}
+#submitnews:active{
+  color: rgb(133, 133, 133);
+}
 /* ---------------------------- */
 .hear{
   color:#EB1365;
@@ -349,8 +359,11 @@
   color:#EB1365;
  }
  .contact .btn:hover{
-  background:white !important;
-  color:#EB1365!important;
+  /* background:white;
+  color:#EB1365;
+  cursor:pointer; */
+  background:#E82771;
+  color:white;
   cursor:pointer;
  }
  .contact input[type=email]:focus{
