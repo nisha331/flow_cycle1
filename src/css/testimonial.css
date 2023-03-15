@@ -38,7 +38,10 @@
     background-color: #fff;
    border:2px solid red;
 }
-
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.7);
+}
 .image-content,
 .card-content{
     padding: 10px 14px;
