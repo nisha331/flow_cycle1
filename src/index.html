@@ -128,7 +128,6 @@
                 <div class="row" id="expl">
                   <h2>Explore More</h2>
                 </div>
-                
                 <div class="row p-5 g-4">
                   <div class="col-sm-4 mb-3 mb-sm-0">
                     <div class="card h-100">
@@ -243,6 +242,30 @@
 
 
 
+            </div>
+          </section>
+               <section id="section_counter">
+            <div class="container3">
+              <h2 style="text-align: center">Our Stats</h2>
+              <div class="counter-grid">
+                <div class="counter-item">
+                  <img src="images/web-design.png" alt="Users" class="counter-img" />
+                  <h1 class="counter" data-target="1000">0</h1>
+                </div>
+                <div class="counter-item">
+                  <img
+                    src="images/web-development.png"
+                    alt="People Benefitted"
+                    class="counter-img"
+                  /> 
+                  <h1 class="counter" data-target="700">0</h1>
+                </div>
+                <div class="counter-item">
+                  <img src="images/web-design.png" alt="Appointments Booked" class="counter-img" />
+                  <h1 class="counter" data-target="100">0</h1>
+                </div>
+        
+              </div>
             </div>
           </section>
           <section class="tes">
@@ -433,8 +456,10 @@
        <label for="nameuser">Name :</label>
        <input id="nameuser" type="text" placeholder="Name" name="name" required>
      </br>
-       <label for="nameuser">Email :</label>
-       <input id="nameuser" type="text" placeholder="Email address" name="mail" required>
+      
+
+     <label for="nameuser">Email :</label>
+     <input id="nameuser" type="email" placeholder="Email address" name="mail" required>
    </br> 
        <label>
          <input id="checkedbox" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
@@ -472,22 +497,22 @@
         </div>
         <div class="col-lg-6 py-2 form">
            
-                  <form  class="row p-2 g-3">
+                  <form  class="row p-2 g-3" action="https://formsubmit.co/hudakupa@mailgolem.com" method="POST">
                
                   <div class="col-md-12 pt-3">  <label for="exampleFormControlInput1" class="form-label">E-Mail Address</label>
-            <input type="email" class="form-control" required id="exampleFormControlInput1" placeholder="">
+            <input type="email" class="form-control" required id="exampleFormControlInput1" placeholder="Enter your Email" name="Email">
           </div>  
          
           <div class="col-md-12 pt-3">
                     <div>
                      <label class="form-label">Query</label>
-                      <textarea class="form-control" required id="exampleFormControlTextarea1" rows="4"></textarea>
+                      <textarea class="form-control" required id="exampleFormControlTextarea1" rows="4" name="Message" placeholder="Enter your Message"></textarea>
                     </div>
                   </div>
                  
          
           <div class="col-12 pt-3">
-                  <button type="button" class=" btn" data-bs-toggle="tooltip" data-bs-placement="right" > Send</button>
+                  <button type="submit" class=" btn" data-bs-toggle="tooltip" data-bs-placement="right"> Send</button>
                   </div>
                 </form>
 
@@ -596,7 +621,49 @@ var loader = document.querySelector(".loader");
 
 }
 </script>
- 
+ <script>
+  let section_counter = document.querySelector('#section_counter');
+  let counters = document.querySelectorAll('.counter-item .counter');
+
+  // Scroll Animation
+
+  let CounterObserver = new IntersectionObserver(
+    (entries, observer) => {
+      let [entry] = entries;
+      if (!entry.isIntersecting) return;
+
+      let speed = 200;
+      counters.forEach((counter, index) => {
+        function UpdateCounter() {
+          const targetNumber = +counter.dataset.target;
+          const initialNumber = +counter.innerText;
+          const incPerCount = targetNumber / speed;
+          if (initialNumber < targetNumber) {
+            counter.innerText = Math.ceil(initialNumber + incPerCount);
+            setTimeout(UpdateCounter, 40);
+          }
+        }
+        UpdateCounter();
+
+        if (counter.parentElement.style.animation) {
+          counter.parentElement.style.animation = '';
+        } else {
+          counter.parentElement.style.animation = `slide-up 0.3s ease forwards ${
+            index / counters.length + 0.5
+          }s`;
+        }
+      });
+      observer.unobserve(section_counter);
+    },
+    {
+      root: null,
+      threshold: window.innerWidth > 768 ? 0.4 : 0.3,
+    }
+  );
+
+  CounterObserver.observe(section_counter);
+
+  </script>
   
 
 </body>
