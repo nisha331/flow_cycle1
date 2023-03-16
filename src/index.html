@@ -444,6 +444,33 @@
               <div class="swiper-pagination"></div>
           </div>
         </section>
+          <div class="containerf"> 
+          <h1>Frequently Asked Questions</h1> 
+          <div class="question-container"> 
+            <div class="question">Q: What is this website all about?</div> 
+            <div class="answer">A:This  website was made for all the women out there who face problems with their periods and also for educating the women out there so that they are aware about their body more.
+
+
+                  </div> 
+            <hr>
+                  <div class="question">Q:Is this period calculator accurate?</div> 
+            <div class="answer">A: Yes, indeed our calculator is reliable as well as accurate .Our testimonials also say so..</div> 
+            <hr>
+                  <div class="question">Q: Do I need any special software to use it?</div> 
+            <div class="answer">A: No, the only requirement is any web browser.</div> 
+                  <hr>
+                  <div class="question">Q: What if I have queries related to pregnancy and periods etc?</div> 
+            <div class="answer">A:  Head on to our articles section and explore more about it all. </div> 
+                  <hr>
+                  <div class="question">Q: Why should I preferFlow Cycle over any other website?</div> 
+            <div class="answer">A: Flow cycle is a one stop website for educating women for their health etc..
+
+            </div> 
+                  <hr>
+                  <div class="question">Q: What if my query is not resolved?</div> 
+            <div class="answer">A: Write us a message or mail us at contact.jwoc@gmail.com</div> 
+          </div> 
+        </div> 
        <section class="news">
         <form id="newsin">
         <div>
@@ -664,7 +691,21 @@ var loader = document.querySelector(".loader");
   CounterObserver.observe(section_counter);
 
   </script>
-  
+  <script> 
+  const questions = document.querySelectorAll(".question"); 
+
+  questions.forEach((question) => { 
+    question.addEventListener("click", () => { 
+      question.classList.toggle("active"); 
+      const answer = question.nextElementSibling; 
+      if (answer.style.display === "block") { 
+        answer.style.display = "none"; 
+      } else { 
+        answer.style.display = "block"; 
+      } 
+    }); 
+  }); 
+</script> 
 
 </body>
 </html>
