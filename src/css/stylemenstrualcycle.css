@@ -36,6 +36,11 @@ body{
     font-size: 20px;
     
 }
+.info-exercise{
+  order-color:white;
+  font-size: 20px;
+  
+}
 .information1{
   border-color:white;
   border-style:solid;
@@ -70,5 +75,16 @@ body{
 }
 
 .inf li{
+  color:#E82771;
+}
+
+.content-exercise{
+  border:2px solid #E82771;
+  border-radius:4px;
+}
+.content-exercise b{
+  color:#E82771;
+}
+.content-exercise a{
   color:#E82771;
 }
