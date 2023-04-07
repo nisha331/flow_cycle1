@@ -59,7 +59,11 @@ Also we have been focussing on the women health and hygiene so that they donot f
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/nisha331"><img src="https://avatars.githubusercontent.com/u/76838660?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Nisha Yadav</h4>   </td>
+<td align="center">
+    <a href="https://github.com/nisha331">
+    <img src="https://avatars.githubusercontent.com/u/76838660?v=4" width=150px height=150px /></a>
+    <h4 style="color:red;">Nisha Yadav</h4>  
+ </td>
 
 </tr>
 </table>
